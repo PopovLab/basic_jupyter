@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "basic-jupyter"
+version = "0.1.0"
+description = ""
+authors = ["Alex <temper8@gmail.com>"]
+readme = "README.md"
+packages = [{include = "basic_jupyter"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.3"
+jupyterlab = "^4.0.0"
+pandas = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.7.1"
+ipykernel = "^6.23.1"
+ipympl = "^0.9.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
